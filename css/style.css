@@ -1,0 +1,207 @@
+body{
+	min-height: 100%;
+	padding-top:70px;
+}
+h1,h3,h4{
+	color: #18BC9C;
+}
+.fixed{
+	position: fixed;
+	top:0;
+}
+.page-title{
+  font-size: 30px;
+  padding: 0px;
+  color: blue;
+}
+#portfolio{
+	transition: all 1.5s ease 0s;
+
+}
+.navbar.navbar-inverse.navbar-fixed-top{
+	opacity: 0.7;
+    filter: alpha(opacity=70);
+}
+.navbar-inverse .navbar-brand{
+	color: #18BC9C;
+}
+.navbar-inverse .navbar-brand:hover,
+.navbar-inverse .navbar-brand:focus{
+	color: white;
+	background-color: transparent;
+	transition: all 0.5s ease 0s;
+
+}
+.navbar-inverse .navbar-nav > li > a{
+	color: :#FFFFFF;
+}
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+	color: #18BC9C;
+	background-color: #202020;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus{
+	color: #18BC9C;
+	background-color: transparent;
+}
+.btn-primary{
+	background-color: #18BC9C;
+	border-color: #18BC9C;
+	color: #FFFFFF;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active{
+	color: black;
+	background-color: #006633;
+	border-color: black;
+	background-color: transparent;
+	transition: all 1.5s ease 0s;
+}
+.thumbnail img:hover{
+	transform: scale(1.1);
+}
+.thumbnail img{
+	transition: all 0.5s ease 0s;
+	width: 100%;
+}
+.thumbnail{
+	overflow: hidden;
+}
+
+.form-control{
+	border-color: #18BC9C;
+}
+.form-control.active{
+	border-color: #006633;
+	color: #18BC9C;
+}
+/* social */
+
+a,a:visited { color: #fff; }
+a:hover { color: #fff; }
+
+.social {
+	float: left;
+	margin: 0.35em 0.35em; width:50px; height: 50px; 	
+	display: block; text-align: center; line-height:50px; color: #fff;
+	position: relative;
+	transform:rotateY(0deg);
+	transition:transform .50s ease-out;
+	transform-style:preserve-3d;
+}
+.social > div {
+	width: 50px; height: 50px; background: #000;
+	position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+}
+.social >.front {
+	transform:translateZ(20px);
+}
+.social >.back {
+	background: #3B5998; font-size: 3em;
+	transform:rotateY(-100deg) translateZ(20px);
+}
+
+.social.social-twitter > .back { background: #55ACEE; }
+.social.social-github > .back { background: #f3f3f3; color: #000; }
+.social.social-googleplus > .back { background: #dd4B39; }
+.social.social-codepen > .back { background: #dd4B39; }
+.social.social-skype > .back { background: #12A5F4; }
+.social.social-bitbucket > .back { background: #4875B4; }
+.social.social-jsfiddle > .back { background: #ea4c89; }
+
+/* Hover */
+.social:hover {
+	transform: rotateY(100deg);
+	color: #fff
+}
+/* social */
+.site-footer{
+	background-color: #222;
+	color: #fff;
+	margin-top: 30px;
+	padding-top: 30px;
+}
+.bottom-footer{
+	border-top: 1px solid #b2b2b2;
+	margin-top: 10px;
+	padding-top: 10px;
+	color: #b2b2b2;
+}
+.footer-nav{
+	text-align: right;
+	list-style: none;
+}
+.footer-nav li{
+	display:inline;
+	padding:0px 8px;
+}
+.footer-nav li:not(:first-child):before{
+	content: '|';
+	padding:0px 8px;
+}
+.footer-nav a{
+	color: #b2b2b2;
+}
+.footer-nav a:hover{
+	color: #18BC9C;
+	background-color: transparent;
+	transition: all 0.3s ease 0s;
+	text-decoration: none;
+}
+.about{
+	font-style: italic;
+	font-size: 23px;
+}
+.content {
+  font: italic normal 17px Georgia; 
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  position: relative;
+  float: left;
+  margin-left: 0px;
+  padding: 7px 15px;
+  width: auto;
+  border-width: 1px 4px 4px 3px;
+  border-style: solid;
+  border-color: #c8c7b4;
+  background-color: #ece5bd;
+
+/* ==================================================================== /*
+/*                                                                      /* 
+/*   + Css Patterns from : http://lea.verou.me/css3patterns/            /* 
+/*   + Arbaoui mehdi : Fix a gradient color bug in OPERA,FIREFOX        /*
+/*     and SAFARI (only new versions)                                   /*
+/*                                                                      /*
+/* ==================================================================== */
+
+  background-image: -linear-gradient(0deg, transparent 18px, #dbada9 0, #dbada9 20px, transparent 19px),
+                    -linear-gradient(#e1dab0 0.1em, transparent 0.1em);
+  background-image: -webkit-linear-gradient(0deg, transparent 11px, #dbada9 0, #dbada9 14px, transparent 12px),
+                    -webkit-linear-gradient(#e1dab0 0.1em, transparent 0.1em);
+  background-image: -moz-linear-gradient(0deg, transparent 11px, #dbada9 0, #dbada9 13px, transparent 12px),
+                    -moz-linear-gradient(#e1dab0 0.1em, transparent 0.1em);
+  background-size: 100% 10px;
+  color: #333;
+
+ }
+.content h3 {
+  font: 23px "Satisfy";
+  margin: 0;
+  padding: 0;
+  font-weight: normal; 
+  }
+
+
+.content:before {
+  top: 48px;
+  left: -11px;
+  border-right: 19px solid rgba(0, 0, 0, 0.1); 
+  }
