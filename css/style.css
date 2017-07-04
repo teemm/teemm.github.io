@@ -1,207 +1,248 @@
-body{
-	min-height: 100%;
-	padding-top:70px;
-}
-h1,h3,h4{
-	color: #18BC9C;
-}
-.fixed{
-	position: fixed;
-	top:0;
-}
-.page-title{
-  font-size: 30px;
-  padding: 0px;
-  color: blue;
-}
-#portfolio{
-	transition: all 1.5s ease 0s;
-
-}
-.navbar.navbar-inverse.navbar-fixed-top{
-	opacity: 0.7;
-    filter: alpha(opacity=70);
-}
-.navbar-inverse .navbar-brand{
-	color: #18BC9C;
-}
-.navbar-inverse .navbar-brand:hover,
-.navbar-inverse .navbar-brand:focus{
-	color: white;
-	background-color: transparent;
-	transition: all 0.5s ease 0s;
-
-}
-.navbar-inverse .navbar-nav > li > a{
-	color: :#FFFFFF;
-}
-.navbar-inverse .navbar-nav > .active > a,
-.navbar-inverse .navbar-nav > .active > a:hover,
-.navbar-inverse .navbar-nav > .active > a:focus {
-	color: #18BC9C;
-	background-color: #202020;
+@font-face {
+	font-family: 'BPGNinoMkhedruli-Bold';
+	src: url('../fonts/BPGNinoMkhedruli-Bold.eot');
+	src: url('../fonts/BPGNinoMkhedruli-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/BPGNinoMkhedruli-Bold.woff2') format('woff2'),
+		url('../fonts/BPGNinoMkhedruli-Bold.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
 }
 
-.navbar-inverse .navbar-nav > li > a:hover,
-.navbar-inverse .navbar-nav > li > a:focus{
-	color: #18BC9C;
-	background-color: transparent;
-}
-.btn-primary{
-	background-color: #18BC9C;
-	border-color: #18BC9C;
-	color: #FFFFFF;
-}
-.btn-primary:hover,
-.btn-primary:focus,
-.btn-primary:active,
-.btn-primary.active{
-	color: black;
-	background-color: #006633;
-	border-color: black;
-	background-color: transparent;
-	transition: all 1.5s ease 0s;
-}
-.thumbnail img:hover{
-	transform: scale(1.1);
-}
-.thumbnail img{
-	transition: all 0.5s ease 0s;
-	width: 100%;
-}
-.thumbnail{
-	overflow: hidden;
+@font-face {
+	font-family: 'BPGNinoEliteCondCaps';
+	src: url('../fonts/BPGNinoEliteCondCaps.eot');
+	src: url('../fonts/BPGNinoEliteCondCaps.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/BPGNinoEliteCondCaps.woff2') format('woff2'),
+		url('../fonts/BPGNinoEliteCondCaps.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
 }
 
-.form-control{
-	border-color: #18BC9C;
-}
-.form-control.active{
-	border-color: #006633;
-	color: #18BC9C;
-}
-/* social */
-
-a,a:visited { color: #fff; }
-a:hover { color: #fff; }
-
-.social {
-	float: left;
-	margin: 0.35em 0.35em; width:50px; height: 50px; 	
-	display: block; text-align: center; line-height:50px; color: #fff;
-	position: relative;
-	transform:rotateY(0deg);
-	transition:transform .50s ease-out;
-	transform-style:preserve-3d;
-}
-.social > div {
-	width: 50px; height: 50px; background: #000;
-	position: absolute; top: 0; left: 0; right: 0; bottom: 0;
-}
-.social >.front {
-	transform:translateZ(20px);
-}
-.social >.back {
-	background: #3B5998; font-size: 3em;
-	transform:rotateY(-100deg) translateZ(20px);
+@font-face {
+	font-family: 'BPGNinoMtavruli-Bold';
+	src: url('../fonts/BPGNinoMtavruli-Bold.eot');
+	src: url('../fonts/BPGNinoMtavruli-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/BPGNinoMtavruli-Bold.woff2') format('woff2'),
+		url('../fonts/BPGNinoMtavruli-Bold.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
 }
 
-.social.social-twitter > .back { background: #55ACEE; }
-.social.social-github > .back { background: #f3f3f3; color: #000; }
-.social.social-googleplus > .back { background: #dd4B39; }
-.social.social-codepen > .back { background: #dd4B39; }
-.social.social-skype > .back { background: #12A5F4; }
-.social.social-bitbucket > .back { background: #4875B4; }
-.social.social-jsfiddle > .back { background: #ea4c89; }
+@font-face {
+	font-family: 'BPGNinoMkhedruliBook';
+	src: url('../fonts/BPGNinoMkhedruliBook.eot');
+	src: url('../fonts/BPGNinoMkhedruliBook.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/BPGNinoMkhedruliBook.woff2') format('woff2'),
+		url('../fonts/BPGNinoMkhedruliBook.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
 
-/* Hover */
-.social:hover {
-	transform: rotateY(100deg);
-	color: #fff
+@font-face {
+	font-family: 'BPGNinoMtavruli';
+	src: url('../fonts/BPGNinoMtavruli.eot');
+	src: url('../fonts/BPGNinoMtavruli.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/BPGNinoMtavruli.woff2') format('woff2'),
+		url('../fonts/BPGNinoMtavruli.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
 }
-/* social */
-.site-footer{
-	background-color: #222;
-	color: #fff;
-	margin-top: 30px;
-	padding-top: 30px;
+.main-container {
+	width: 96%;
+	max-width: 2200px;
+	margin-right: auto;
+	margin-left: auto;
 }
-.bottom-footer{
-	border-top: 1px solid #b2b2b2;
-	margin-top: 10px;
-	padding-top: 10px;
-	color: #b2b2b2;
+h2 {
+	font-family: 'BPGNinoMtavruli-Bold';
 }
-.footer-nav{
-	text-align: right;
+.logo {
+	width: 100px;
+	display: inline-block;
+	margin-left: 60px;
+	margin-right: 40px;
+	
+}
+
+nav {
+	display: inline-block;
+	font-family: 'BPGNinoMtavruli-Bold';
+}
+
+li {
 	list-style: none;
+	display: inline-block;
 }
-.footer-nav li{
-	display:inline;
-	padding:0px 8px;
-}
-.footer-nav li:not(:first-child):before{
-	content: '|';
-	padding:0px 8px;
-}
-.footer-nav a{
-	color: #b2b2b2;
-}
-.footer-nav a:hover{
-	color: #18BC9C;
-	background-color: transparent;
-	transition: all 0.3s ease 0s;
+
+a {
 	text-decoration: none;
+	/*font-family: 'BPG Nino Mtavruli Bold';*/
+	margin-left: 15px;
+	margin-right: 15px;
 }
-.about{
-	font-style: italic;
-	font-size: 23px;
+
+.google {
+	width: 30px;
+	display: inline-block;
+	margin-right: 15px;
+	margin-left: 15px;
 }
-.content {
-  font: italic normal 17px Georgia; 
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-  border-radius: 10px;
-  position: relative;
-  float: left;
-  margin-left: 0px;
-  padding: 7px 15px;
-  width: auto;
-  border-width: 1px 4px 4px 3px;
-  border-style: solid;
-  border-color: #c8c7b4;
-  background-color: #ece5bd;
 
-/* ==================================================================== /*
-/*                                                                      /* 
-/*   + Css Patterns from : http://lea.verou.me/css3patterns/            /* 
-/*   + Arbaoui mehdi : Fix a gradient color bug in OPERA,FIREFOX        /*
-/*     and SAFARI (only new versions)                                   /*
-/*                                                                      /*
-/* ==================================================================== */
+.facebook {
+	width: 10px;
+	display: inline-block;
+	margin-right: 15px;
+	margin-left: 15px;
+}
 
-  background-image: -linear-gradient(0deg, transparent 18px, #dbada9 0, #dbada9 20px, transparent 19px),
-                    -linear-gradient(#e1dab0 0.1em, transparent 0.1em);
-  background-image: -webkit-linear-gradient(0deg, transparent 11px, #dbada9 0, #dbada9 14px, transparent 12px),
-                    -webkit-linear-gradient(#e1dab0 0.1em, transparent 0.1em);
-  background-image: -moz-linear-gradient(0deg, transparent 11px, #dbada9 0, #dbada9 13px, transparent 12px),
-                    -moz-linear-gradient(#e1dab0 0.1em, transparent 0.1em);
-  background-size: 100% 10px;
-  color: #333;
+.youtube {
+	width: 20px;
+	display: inline-block;
+	margin-right: 15px;
+	margin-left: 15px;
 
- }
-.content h3 {
-  font: 23px "Satisfy";
-  margin: 0;
-  padding: 0;
-  font-weight: normal; 
-  }
+}
 
+.search {
+	width: 20px;
+	display: inline-block;
+	margin-left: 15px;
+}
 
-.content:before {
-  top: 48px;
-  left: -11px;
-  border-right: 19px solid rgba(0, 0, 0, 0.1); 
-  }
+.line {
+	width: 1px;
+	height: 20px;
+	background-color: #0000CD;
+	display: inline-block;
+}
+
+/*.Menu-1, .Menu-2 {
+	margin: 60px;
+	display: inline-block;
+}*/
+
+article {
+	display: inline-block;
+	width: 24%;
+	vertical-align: top;
+	margin-left: 0.5%;
+	margin-right: 0.5%;
+}
+article img {
+	width: 100%;
+	display: block;
+}
+
+article img:hover {
+	opacity: .1;
+}
+
+article p:hover {
+	background-color: #342D7E;
+}
+
+.Menu {
+	background-color: #D0D0D0;
+}
+
+p, h2 {
+	background-color: #F0F0F0;
+	height: 50px;
+}
+
+.meti {
+	background-color: #A8A8A8;
+	text-align: center;
+	margin-left: 450px;
+	width: 200px;
+	height: 50px;
+}
+
+.meti:hover {
+	background-color: #EBEBEB;
+}
+
+.Videos {
+	background-color: #342D7E;
+}
+
+.video {
+	display: inline-block;
+	margin-left: 60px;
+	background-color: #342D7E;
+	color: white;
+}
+
+.line1 {
+	background-color: white;
+	display: inline-block;
+	width: 1px;
+	height: 20px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.all-videos {
+	display: inline-block;
+	background-color: #342D7E;
+	color: white;
+	}
+
+.part-1 {
+	display: block;
+}
+
+.white-box {
+	background-color: white;
+	width: 48%;
+	margin-right: 0.5%;
+	margin-left: 0.5%; 
+	height: 250px;
+	display: inline-block;
+	text-align: center;
+	margin-bottom: 30px;
+	border: 2px solid white;
+
+}
+
+.white-box:hover {
+	border-color: red;
+}
+
+.boxes {
+	display: block;
+	margin-left: 520px;
+}
+.small-box {
+	border: 2px solid;
+	border-color: white;
+	display: inline-block;
+	height: 15px;
+	width: 15px;
+	margin: 10px;
+}
+
+.small-box:hover {
+	background-color: white;
+}
+
+/*@media (max-height: 500px){
+	body{
+		background-color: red;
+	}
+}*/
+
+@media (max-width: 900px) {
+	article{
+		width: 49%; 
+		/*background-color: red;*/
+	}
+}
+
+@media (max-width: 600px) {
+	article{
+		width: 90%; 
+		/*background-color: red;*/
+	}
+}
+
