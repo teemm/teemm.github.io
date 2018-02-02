@@ -6,118 +6,31 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
+	<meta property="og:url"           content="https://www.your-domain.com/your-page.html" />
+	  <meta property="og:type"          content="website" />
+	  <meta property="og:title"         content="Your Website Title" />
+	  <meta property="og:description"   content="Your description" />
+	  <meta property="og:image"         content="https://www.your-domain.com/path/image.jpg" />
+</head>
 </head>
 
 <body>
+<h1>Share</h1>
 
-	<header>
-		<div class="logo"><img src="img/logo.svg" alt="logo"></div>
-	
-		<nav>
-			<ul>
-				<li><a href="">მთავარი</a></li>
-				<li><a href="">სიახლეები</a></li>
-				<li><a href="">ჩვენ შესახებ</a></li>
-				<li><a href="">კონტაქტი</a></li>
-			</ul>
-		</nav>
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
 
-		<img class="google" src="img/google-plus.svg" alt="google-plus">
-
-		<div class="line"></div>
-
-		<img class="facebook" src="img/facebook-icon.svg" alt="facebook">
-
-		<div class="line"></div>
-
-		<img class="youtube" src="img/youtube.svg" alt="youtube">
-
-		<div class="line"></div>
-
-		<img class="search" src="img/search.svg" alt="search">
-
-	</header>
-		
-		<div class="Menu">
-			<div class="Menu-1 main-container">
-		
-				<article>
-					<img src="img/typography.jpg" alt="typography">
-					<p>ტიპოგრაფია</p>
-				</article><!--
-					
-				--><article>
-					<img src="img/social_media.jpg" alt="social media">
-					<p>ონლაინ მარკეტინგი</p>
-				</article><!--
-					
-				--><article>
-					<img src="img/coding.jpg" alt="coding">
-					<p>C# პროგრამირება</p>
-				</article><!--
-					
-				--><article>
-					<img src="img/design.jpg" alt="design">
-					<p>დიზაინი</p>
-				</article>
-
-			</div>
-			
-			<div class="Menu-2 main-container">
-
-				<article>
-					<img src="img/typography.jpg" alt="typography">
-					<p>ტიპოგრაფია</p>
-				</article><!--
-					
-				--><article>
-					<img src="img/social_media.jpg" alt="social media">
-					<p>ონლაინ მარკეტინგი</p>
-				</article><!--
-					
-				--><article>
-					<img src="img/coding.jpg" alt="coding">
-					<p>C# პროგრამირება</p>
-				</article><!--
-					
-				--><article>
-					<img src="img/design.jpg" alt="design">
-					<p>დიზაინი</p>
-				</article>
-
-
-				<p class="meti">მეტის ჩატვირთვა</p>
-
-			</div>
-
-		</div>
-
-
-		<div class="Videos">
-			<div class=" main-container">
-			
-			<div class="part-1">
-				
-				<p class="video">ვიდეო</p>
-
-				<div class="line1"></div>
-
-				<p class="all-videos">იხილეთ ყველა</p>
-
-			</div>
-				
-			<div class="white-box">EMBEDED <span>YOUTUBE</span> VIDEO GOES HERE</div><!--
-			--><div class="white-box">EMBEDED YOUTUBE VIDEO GOES HERE</div>
-			
-			<div class="boxes">
-				<div class="small-box"></div>
-				<div class="small-box"></div>
-				<div class="small-box"></div>
-				<div class="small-box"></div>
-			</div>
-			</div>
-	
-		</div>
+  <!-- Your share button code -->
+  <div class="fb-share-button" 
+    data-href="https://www.your-domain.com/your-page.html" 
+    data-layout="button_count">
+  </div>
 
 
 </body>
