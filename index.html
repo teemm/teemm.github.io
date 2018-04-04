@@ -6,20 +6,199 @@
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/fonts.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<title>main</title>
+ 	<meta name="description" content="Free Web tutorials">
+  	<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+  	<meta name="author" content="John Doe">
+
+
+	<meta property="og:url"           content="https://www.your-domain.com/your-page.html" />
+	  <meta property="og:type"          content="website" />
+	  <meta property="og:title"         content="Your Website Title" />
+	  <meta property="og:description"   content="Your description" />
+	  <meta property="og:image"         content="https://www.your-domain.com/path/image.jpg" />
 </head>
 <body>
 <header class="header">
-	<div class="header-container">
-		<a class="logo inline-block-class" href="#"><img src="img/logo.svg"></a>
-		<nav class="inline-block-class">
-			<ul>
-				<li class="inline-block-class list"><a href="#">Home</a></li>
-				<li class="inline-block-class list"><a href="#">Main</a></li>		
-				<li class="inline-block-class list"><a href="#">News</a></li>
+	<div class="container flex header-inner">
+		<a class="logo" href="javascript:void(0)">
+			<img src="img/logo.svg">
+		</a>
+		<div class="right-block flex">
+			<nav class="navigaiton desktop-navigation">
+				<ul class="navigaiton-ul flex">
+					<li class="navigaiton-li">
+						<a href="javascript:void(0)" class="navigaiton-a">Home</a>
+					</li>
+					<li class="navigaiton-li">
+						<a href="javascript:void(0)" class="navigaiton-a">Home</a>
+					</li>
+					<li class="navigaiton-li">
+						<a href="javascript:void(0)" class="navigaiton-a">Home</a>
+					</li>
+					<li class="navigaiton-li">
+						<a href="contact.html" class="navigaiton-a">Contact</a>
+					</li>
+				</ul>
+			</nav>
+
+			<div id="navigation" class="responsive-burger-menu">
+				<nav class="navigaiton flex">
+					<ul class="navigaiton-ul flex">
+						<li class="navigaiton-li">
+							<a href="javascript:void(0)" class="navigaiton-a">Home</a>
+						</li>
+						<li class="navigaiton-li">
+							<a href="javascript:void(0)" class="navigaiton-a">Home</a>
+						</li>
+						<li class="navigaiton-li">
+							<a href="javascript:void(0)" class="navigaiton-a">Home</a>
+						</li>
+						<li class="navigaiton-li">
+							<a href="contact.html" class="navigaiton-a">Contact</a>
+						</li>
+					</ul>
+				</nav>
+
+				<ul class="social-icons flex">
+					<li class="social-li flex">
+						<a href="javascript:void(0)" class="social-a">F</a>
+					</li>
+					<li class="social-li flex">
+						<a href="javascript:void(0)" class="social-a">F</a>
+					</li>
+					<li class="social-li flex">
+						<a href="javascript:void(0)" class="social-a">F</a>
+					</li>
+				</ul>
+
+
+			</div>
+
+			<ul class="social-icons flex desctop-socials">
+				<li class="social-li flex">
+					<a href="javascript:void(0)" class="social-a">F</a>
+				</li>
+				<li class="social-li flex">
+					<a href="javascript:void(0)" class="social-a">F</a>
+				</li>
+				<li class="social-li flex">
+					<a href="javascript:void(0)" class="social-a">F</a>
+				</li>
+				<li class="social-li search flex">
+					<a href="javascript:void(0)" class="social-a">S</a>
+				</li>
 			</ul>
-		</nav>
+			<div class="burger" id="burger">
+				<div class="divider"></div>
+				<div class="divider"></div>
+				<div class="divider"></div>
+			</div>
+		</div>
 	</div>
 </header>
+
+<seciton class="banner">
+	<div class="container">
+		<img src="img/banner.jpg">
+	</div>
+</seciton>
+
+<seciton class="video-block">
+	<div class="container">
+		<h1 class="title color-white">NEWS | <a href="#">view all news</a></h1>
+		<div class="video-wrapper flex">
+			<div class="video">
+				<iframe src="https://www.youtube.com/embed/Ir7J0eEuWgk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			</div>
+			<div class="video">
+				<video controls src="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4"></video>
+			</div>
+		</div>
+		<div class="video-wrapper flex">
+			<div class="video">
+					<audio controls src="https://www.w3schools.com/html/horse.ogg"></audio>
+			</div>
+			<div class="video">
+					<audio controls src="https://www.w3schools.com/html/horse.ogg"></audio>
+			</div>
+		</div>
+	</div>
+	
+</seciton>
+
+<seciton class="news-list">
+	<div class="container">
+		<h1 class="title color-black">NEWS | <a href="#">view all news</a></h1>
+		<div class="article-block flex">
+			<article class="article">
+				<img src="img/coding.jpg">
+				<h1 class="article-title">Typography Lab</h1>
+			</article>
+			<article class="article">
+				<img src="img/coding.jpg">
+				<h1 class="article-title">Typography Lab</h1>
+			</article>
+			<article class="article">
+				<img src="img/coding.jpg">
+				<h1 class="article-title">Typography Lab</h1>
+			</article>
+			<article class="article">
+				<img src="img/coding.jpg">
+				<h1 class="article-title">Typography Lab</h1>
+			</article>
+			<article class="article">
+				<img src="img/coding.jpg">
+				<h1 class="article-title">Typography Lab</h1>
+			</article>
+			<article class="article">
+				<img src="img/coding.jpg">
+				<h1 class="article-title">Typography Lab</h1>
+			</article>
+			<article class="article">
+				<img src="img/coding.jpg">
+				<h1 class="article-title">Typography Lab</h1>
+			</article>
+			<article class="article">
+				<img src="img/coding.jpg">
+				<h1 class="article-title">Typography Lab</h1>
+			</article>
+			<article class="article">
+				<img src="img/coding.jpg">
+				<h1 class="article-title">Typography Lab</h1>
+			</article>
+			<article class="article">
+				<img src="img/coding.jpg">
+				<h1 class="article-title">Typography Lab</h1>
+			</article>
+			<article class="article">
+				<img src="img/coding.jpg">
+				<h1 class="article-title">Typography Lab</h1>
+			</article>
+			<article class="article">
+				<img src="img/coding.jpg">
+				<h1 class="article-title">Typography Lab</h1>
+			</article>
+		</div>
+	</div>
+</seciton>
+<footer class="footer">
+	<div class="container flex footer-wrapper">
+		<div class="left-block">
+			<span class="text">©2017 hyper text murkup language</span>
+		</div>
+		<div class="right-bloxk">
+			<span class="text">created by: ME</span>
+		</div>
+	</div>
+</footer>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
 </body>
 </html>
