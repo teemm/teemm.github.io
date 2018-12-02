@@ -1,207 +1,140 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<title>title</title>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/fonts.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<title>custom title</title>
- 	<meta name="description" content="custom description">
-  	<meta name="keywords" content="HTML,CSS,XML,JavaScript">
-  	<meta name="author" content="John Doe">
-
-
-	  <meta property="og:url"           content="http://teemm.github.io/" />
-	  <meta property="og:type"          content="website" />
-	  <!-- <meta property="og:title"         content="Your Website Title" /> -->
-	  <!-- <meta property="og:description"   content="Your Website description" /> -->
-	  <meta property="og:image"         content="http://teemm.github.io/img/share.jpg" />
-
-
 </head>
 <body>
-<header class="header">
-	<div class="container flex header-inner">
-		<a class="logo" href="javascript:void(0)">
-			<img src="img/logo.svg">
-		</a>
-		<div class="right-block flex">
-			<nav class="navigaiton desktop-navigation">
-				<ul class="navigaiton-ul flex">
-					<li class="navigaiton-li">
-						<a href="javascript:void(0)" class="navigaiton-a">Home</a>
-					</li>
-					<li class="navigaiton-li">
-						<a href="javascript:void(0)" class="navigaiton-a">Home</a>
-					</li>
-					<li class="navigaiton-li">
-						<a href="javascript:void(0)" class="navigaiton-a">Home</a>
-					</li>
-					<li class="navigaiton-li">
-						<a href="contact.html" class="navigaiton-a">Contact</a>
-					</li>
-				</ul>
-			</nav>
-
-			<div id="navigation" class="responsive-burger-menu">
-				<nav class="navigaiton flex">
-					<ul class="navigaiton-ul flex">
-						<li class="navigaiton-li">
-							<a href="javascript:void(0)" class="navigaiton-a">Home</a>
-						</li>
-						<li class="navigaiton-li">
-							<a href="javascript:void(0)" class="navigaiton-a">Home</a>
-						</li>
-						<li class="navigaiton-li">
-							<a href="javascript:void(0)" class="navigaiton-a">Home</a>
-						</li>
-						<li class="navigaiton-li">
-							<a href="contact.html" class="navigaiton-a">Contact</a>
-						</li>
-					</ul>
-				</nav>
-
-				<ul class="social-icons flex">
-					<li class="social-li flex">
-						<a href="javascript:void(0)" class="social-a">F</a>
-					</li>
-					<li class="social-li flex">
-						<a href="javascript:void(0)" class="social-a">F</a>
-					</li>
-					<li class="social-li flex">
-						<a href="javascript:void(0)" class="social-a">F</a>
-					</li>
-				</ul>
-
-
-			</div>
-
-			<ul class="social-icons flex desctop-socials">
-				<li class="social-li flex">
-					<a href="javascript:void(0)" class="social-a">F</a>
-				</li>
-				<li class="social-li flex">
-					<a href="javascript:void(0)" class="social-a">F</a>
-				</li>
-				<li class="social-li flex">
-					<a href="javascript:void(0)" class="social-a">F</a>
-				</li>
-				<li class="social-li search flex">
-					<a href="javascript:void(0)" class="social-a">S</a>
-				</li>
-			</ul>
-			<div class="burger" id="burger">
-				<div class="divider"></div>
-				<div class="divider"></div>
-				<div class="divider"></div>
-			</div>
-		</div>
-	</div>
+<header class="header-class container clearfix">
+	<!-- logo -->
+	<a class="logo float-left" href="#">
+		<img src="img/logo.svg">
+	</a>
+	<!-- soc icons -->
+	<ul class="soc-ul float-right">
+		<li class="soc-li vertical-midlle">
+			<a class="social-a" href="#">
+				<img src="img/f.svg">
+			</a>
+		</li>
+		<li class="soc-li vertical-midlle">
+			<a class="social-a" href="#">
+				<img src="img/youtube.svg">
+			</a>
+		</li>
+		<li class="soc-li vertical-midlle">
+			<a class="social-a" href="#">
+				<img src="img/f.svg">
+			</a>
+		</li>
+		<li class="soc-li vertical-midlle">
+			<a class="social-a" href="#">
+				<img src="img/youtube.svg">
+			</a>
+		</li>
+	</ul>
+	<!-- nav -->
+	<nav class="nav float-right">
+		<ul class="nav-ul">
+			<li class="nav-li vertical-midlle">
+				<a class="nav-a" href="#">home</a>
+			</li>
+			<li class="nav-li vertical-midlle">
+				<a class="nav-a" href="#">news</a>
+			</li>
+			<li class="nav-li vertical-midlle">
+				<a class="nav-a" href="#">about as</a>
+			</li>
+			<li class="nav-li vertical-midlle">
+				<a class="nav-a" href="#">contact</a>
+			</li>
+		</ul>
+	</nav>
 </header>
+<section class="banner-section">
+	<img class="container" src="img/banner.jpg">
+</section>
 
-<seciton class="banner">
+<section class="video-section">
 	<div class="container">
-		<img src="img/banner.jpg">
-	</div>
-</seciton>
-
-<seciton class="video-block">
-	<div class="container">
-		<h1 class="title color-white">NEWS | <a href="#">view all news</a></h1>
-		<div class="video-wrapper flex">
-			<div class="video">
-				<iframe src="https://www.youtube.com/embed/Ir7J0eEuWgk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-			</div>
-			<div class="video">
-				<video controls src="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4"></video>
-			</div>
-		</div>
-		<div class="video-wrapper flex">
-			<div class="video">
-					<audio controls src="https://www.w3schools.com/html/horse.ogg"></audio>
-			</div>
-			<div class="video">
-					<audio controls src="https://www.w3schools.com/html/horse.ogg"></audio>
-			</div>
+		<h1 class="vide-title">videos | <a href="#">all videos</a></h1>
+		<div class="video-block-wrapper clearfix">
+			<div class="video float-left">video left</div>
+			<div class="video float-right">video right</div>
 		</div>
 	</div>
-	
-</seciton>
+</section>
 
-<seciton class="news-list">
+<section class="article-section">
 	<div class="container">
-		<h1 class="title color-black">NEWS | <a href="#">view all news</a></h1>
-		<div class="article-block flex">
-			<article class="article">
-				<img src="img/coding.jpg">
-				<h1 class="article-title">Typography Lab</h1>
+		<h1 class="article-title">news | <a href="#">all news</a></h1>
+		<div class="article-wrapper clearfix">
+			<article class="article float-left">
+				<img src="img/design.jpg">
+				<h1 class="article-header">Interface Design</h1>
 			</article>
-			<article class="article">
-				<img src="img/coding.jpg">
-				<h1 class="article-title">Typography Lab</h1>
+			<article class="article float-left">
+				<img src="img/design.jpg">
+				<h1 class="article-header">Interface Design</h1>
 			</article>
-			<article class="article">
-				<img src="img/coding.jpg">
-				<h1 class="article-title">Typography Lab</h1>
+			<article class="article float-left">
+				<img src="img/design.jpg">
+				<h1 class="article-header">Interface Design</h1>
 			</article>
-			<article class="article">
-				<img src="img/coding.jpg">
-				<h1 class="article-title">Typography Lab</h1>
-			</article>
-			<article class="article">
-				<img src="img/coding.jpg">
-				<h1 class="article-title">Typography Lab</h1>
-			</article>
-			<article class="article">
-				<img src="img/coding.jpg">
-				<h1 class="article-title">Typography Lab</h1>
-			</article>
-			<article class="article">
-				<img src="img/coding.jpg">
-				<h1 class="article-title">Typography Lab</h1>
-			</article>
-			<article class="article">
-				<img src="img/coding.jpg">
-				<h1 class="article-title">Typography Lab</h1>
-			</article>
-			<article class="article">
-				<img src="img/coding.jpg">
-				<h1 class="article-title">Typography Lab</h1>
-			</article>
-			<article class="article">
-				<img src="img/coding.jpg">
-				<h1 class="article-title">Typography Lab</h1>
-			</article>
-			<article class="article">
-				<img src="img/coding.jpg">
-				<h1 class="article-title">Typography Lab</h1>
-			</article>
-			<article class="article">
-				<img src="img/coding.jpg">
-				<h1 class="article-title">Typography Lab</h1>
+			<article class="article float-left">
+				<img src="img/design.jpg">
+				<h1 class="article-header">Interface Design</h1>
 			</article>
 		</div>
 	</div>
-</seciton>
+</section>
+
+<section class="featured-section">
+	<div class="container">
+		<h1 class="featured-title">Featured | <a href="#">view all featured media</a></h1>
+		<div class="article-wrapper clearfix">
+			<article class="featured-article float-left">
+				<h1 class="feature-article-title">Responsive Web Design</h1>
+				<div class="text-box-wrapper clearfix">
+					<img class="featured-img float-left" src="img/mobile.png">
+					<p class="featured-text float-right">
+						approach that suggests that design and development should respond to the <span>user's</span> behavior and environment based on screen size, platform and orientation.
+
+					</p>
+				</div>
+
+				<div class="read-more-wrapper clearfix">
+					<a class="float-right" href="#">read more</a>
+				</div>
+				
+			</article>
+			<article class="featured-article float-right">
+				<h1 class="feature-article-title">Responsive Web Design</h1>
+				<div class="text-box-wrapper clearfix">
+					<img class="featured-img float-left" src="img/mobile.png">
+					<p class="featured-text float-right">
+						approach that suggests that design and development should respond to the <span>user's</span> behavior and environment based on screen size, platform and orientation.
+					</p>
+				</div>
+
+				<div class="read-more-wrapper clearfix">
+					<a class="float-right" href="#">read more</a>
+				</div>
+				
+			</article>
+		</div>
+	</div>
+</section>
+
 <footer class="footer">
-	<div class="container flex footer-wrapper">
-		<div class="left-block">
-			<span class="text">©2017 hyper text murkup language</span>
-		</div>
-		<div class="right-bloxk">
-			<span class="text">created by: ME</span>
-		</div>
+	<div class="container clearfix">
+		<div class="left-block float-left">©2017 hyper text murkup language</div>
+		<div class="right-block float-right">created by: ME</div>
 	</div>
 </footer>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script type="text/javascript" src="js/script.js"></script>
-<script>(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1";
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));</script>
+
 </body>
 </html>

@@ -1,8 +1,29 @@
+@font-face{
+	font-family: "nino_mtavruli_bold";
+  	src: url('../fonts/bpgninomtavruliboldwebfont.eot');
+	src: url('../fonts/bpgninomtavruliboldwebfont.eot') format('embedded-opentype'),
+         url('../fonts/bpgninomtavruliboldwebfont.woff2') format('woff2'),
+         url('../fonts/bpgninomtavruliboldwebfont.woff') format('woff'),
+         url('../fonts/bpgninomtavruliboldwebfont.ttf') format('truetype'),
+         url('../fonts/bpgninomtavruliboldwebfont.svg#bpgninomtavruliboldwebfont') format('svg');
+}
+
 @font-face {
-    font-family: 'RobotoRegular';
-    src: url('../fonts/RobotoRegular.eot') format('embedded-opentype'),
-         url('../fonts/RobotoRegular.woff2') format('woff2'),
-         url('../fonts/RobotoRegular.woff') format('woff'),
-         url('../fonts/RobotoRegular.ttf') format('truetype'),
-         url('../fonts/RobotoRegular.svg#RobotoRegular') format('svg');
+    font-family: 'bpg_ingiri_arial';
+    src: url('../fonts/bpg-ingiri-arial-webfont.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/bpg-ingiri-arial-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/bpg-ingiri-arial-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/bpg-ingiri-arial-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../fonts/bpg-ingiri-arial-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/bpg-ingiri-arial-webfont.svg#bpg_ingiri_arialregular') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.eot');
+    src: url('../fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Roboto-Regular.woff2') format('woff2'),
+        url('../fonts/Roboto-Regular.woff') format('woff'),
+        url('../fonts/Roboto-Regular.ttf') format('truetype'),
+        url('../fonts/Roboto-Regular.svg#Roboto-Regular') format('svg');
 }
