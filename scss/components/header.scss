@@ -13,6 +13,22 @@ body{
 	.logo{
 		width: 195px;
 	}
+	.logo-color{
+		fill: $base_red;
+		transition: fill .3s linear;
+	}
+	// svg:hover .logo-color:nth-child(2n){
+	// 	fill:$base_blue;
+	// }
+	svg{
+		&:hover{
+			.logo-color{
+				&:nth-child(2n){
+					fill:$base_blue;
+				}
+			}
+		}
+	}
 	.burger{
 		width: 60px;
 		height: 60px;

@@ -171,6 +171,13 @@ body {
 	*/ }
   .header-class .logo {
     width: 195px; }
+  .header-class .logo-color {
+    fill: #EE4036;
+    -webkit-transition: fill .3s linear;
+    -o-transition: fill .3s linear;
+    transition: fill .3s linear; }
+  .header-class svg:hover .logo-color:nth-child(2n) {
+    fill: #3D58A6; }
   .header-class .burger {
     width: 60px;
     height: 60px;
