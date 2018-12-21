@@ -1,0 +1,80 @@
+/* header */
+body{
+	padding-top: 102px;
+}
+.header-class {
+	padding: 20px 0;
+	background-color: $base_white;
+	position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 50;
+	.logo{
+		width: 195px;
+	}
+	.burger{
+		width: 60px;
+		height: 60px;
+		background-color: $base_blue;
+		display: none; 
+	}
+	.header-wrapper{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.social-a{
+		display: inline-block;
+		padding: 0 18px;
+		border-right-width: 1px;
+		border-right-color: $base_blue;
+		border-right-style: solid;
+	}
+	.soc-li.search{
+		.social-a{
+			padding-right: 0;
+			border: 0;
+		}
+	}
+
+	/*.soc-li:nth-child(odd){
+		background-color: yellow;
+	}*/
+	.soc-li:last-child .social-a{
+		padding-right: 0;
+		border: 0;
+	}
+	/*.social-a::before{
+		content: "b";
+	}
+	.social-a::after{
+		content: "a";
+	}
+	*/
+	.social-a img{
+		height: 30px;
+	}
+	.nav-a{
+		font-family: $Roboto;
+		padding: 0 15px;
+		font-size: 24px;
+		text-transform: uppercase;
+		color: $base_blue;
+		opacity: 1;
+		/*visibility: hidden;	*/
+		/*width: 100px;*/
+		transition-property: opacity;
+		transition-timing-function: linear;
+		transition-duration: .3s;
+		transition-delay: .1s;
+		// transition: width .3s linear 1s, opacity .3s linear 1s;
+		animation: colorAnimation 3s infinite .3s;
+		&:hover{
+			opacity: 0.5;
+		}
+	}
+}
+
+
+// header 

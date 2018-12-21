@@ -1,0 +1,7 @@
+@mixin bacgkround($color, $size, $repeat, $position) {
+    background-color: $color;
+    background-size: $size;
+    background-repeat: $repeat;
+    background-position: ($position);
+}
+

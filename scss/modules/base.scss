@@ -1,0 +1,37 @@
+ /*bace classes */
+ .container{
+	display: block;
+	max-width: 1170px;
+	width: 100%;
+	margin: 0 auto;
+}
+.vertical-midlle{
+	display: inline-block;
+	vertical-align: middle;
+}
+.clear{
+	clear: both;
+}
+%is-visible{
+	visibility: hidden;
+	opacity: 0;
+}
+%is-invisible{
+	visibility: visible;
+	opacity: 1;
+}
+.clearfix::after{
+	content:  "";
+	clear: both;
+	display: block;
+}
+.float-left{
+	float: left;
+}
+.float-right{
+	float: right;
+}
+.relative{
+	position: relative;
+}
+/* bace classes */

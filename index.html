@@ -1,98 +1,124 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>title</title>
-	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="css/reset.css">
-	<link rel="stylesheet" type="text/css" href="css/fonts.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Geolab Gori group">
+	<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+	<meta name="author" content="Geolab">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Document</title>
 </head>
 <body>
-<header class="header-class container clearfix">
-	<!-- logo -->
-	<a class="logo float-left" href="#">
-		<img src="img/logo.svg">
-	</a>
-	<!-- soc icons -->
-	<ul class="soc-ul float-right">
-		<li class="soc-li vertical-midlle">
-			<a class="social-a" href="#">
-				<img src="img/f.svg">
-			</a>
-		</li>
-		<li class="soc-li vertical-midlle">
-			<a class="social-a" href="#">
-				<img src="img/youtube.svg">
-			</a>
-		</li>
-		<li class="soc-li vertical-midlle">
-			<a class="social-a" href="#">
-				<img src="img/f.svg">
-			</a>
-		</li>
-		<li class="soc-li vertical-midlle">
-			<a class="social-a" href="#">
-				<img src="img/youtube.svg">
-			</a>
-		</li>
-	</ul>
-	<!-- nav -->
-	<nav class="nav float-right">
-		<ul class="nav-ul">
-			<li class="nav-li vertical-midlle">
-				<a class="nav-a" href="#">home</a>
-			</li>
-			<li class="nav-li vertical-midlle">
-				<a class="nav-a" href="#">news</a>
-			</li>
-			<li class="nav-li vertical-midlle">
-				<a class="nav-a" href="#">about as</a>
-			</li>
-			<li class="nav-li vertical-midlle">
-				<a class="nav-a" href="#">contact</a>
-			</li>
-		</ul>
-	</nav>
-</header>
-<section class="banner-section">
-	<img class="container" src="img/banner.jpg">
-</section>
-
-<section class="video-section">
-	<div class="container">
-		<h1 class="vide-title">videos | <a href="#">all videos</a></h1>
-		<div class="video-block-wrapper clearfix">
-			<div class="video float-left">video left</div>
-			<div class="video float-right">video right</div>
-		</div>
-	</div>
-</section>
-
-<section class="article-section">
-	<div class="container">
-		<h1 class="article-title">news | <a href="#">all news</a></h1>
-		<div class="article-wrapper clearfix">
-			<article class="article float-left">
-				<img src="img/design.jpg">
-				<h1 class="article-header">Interface Design</h1>
-			</article>
-			<article class="article float-left">
-				<img src="img/design.jpg">
-				<h1 class="article-header">Interface Design</h1>
-			</article>
-			<article class="article float-left">
-				<img src="img/design.jpg">
-				<h1 class="article-header">Interface Design</h1>
-			</article>
-			<article class="article float-left">
-				<img src="img/design.jpg">
-				<h1 class="article-header">Interface Design</h1>
-			</article>
-		</div>
-	</div>
-</section>
-
-<section class="featured-section">
+    <header class="header-class">
+        <div class="container header-wrapper">
+                <!-- logo -->
+        <a class="logo" href="#">
+            <img src="img/logo.svg">
+        </a>
+        <!-- nav -->
+        <nav class="nav">
+            <ul class="nav-ul">
+                <li class="nav-li vertical-midlle">
+                    <a class="nav-a" href="#">home</a>
+                </li>
+                <li class="nav-li vertical-midlle">
+                    <a class="nav-a" href="#">news</a>
+                </li>
+                <li class="nav-li vertical-midlle">
+                    <a class="nav-a" href="#">about as</a>
+                </li>
+                <li class="nav-li vertical-midlle">
+                    <a class="nav-a" href="contact.html">contact</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- soc icons -->
+        <ul class="soc-ul">
+            <li class="soc-li vertical-midlle">
+                <a class="social-a" href="#">
+                    <img src="img/f.svg">
+                </a>
+            </li>
+            <li class="soc-li vertical-midlle">
+                <a class="social-a" href="#">
+                    <img src="img/youtube.svg">
+                </a>
+            </li>
+            <li class="soc-li vertical-midlle">
+                <a class="social-a" href="#">
+                    <img src="img/f.svg">
+                </a>
+            </li>
+            <li class="soc-li vertical-midlle">
+                <a class="social-a" href="#">
+                    <img src="img/youtube.svg">
+                </a>
+            </li>
+        </ul>
+        <div class="burger"></div>
+        </div>
+    </header>
+    <section class="banner-section">
+        <div class="container relative">
+            <img class="banner-img" src="img/banner.jpg">
+            <ul class="banner-list">
+                <li>things aren't always</li>
+                <li>#000000</li>
+                <li>or</li>
+                <li>#ffffff</li>
+            </ul>
+            <img class="white-logo" src="img/white-logo.svg">
+        </div>
+    </section>
+    <section class="video-section">
+        <div class="container">
+            <h1 class="vide-title">videos | <a href="#">all videos</a></h1>
+            <div class="video-block-wrapper">
+                <div class="video">
+                    <video controls="on" autoplay="off">
+                        <source src="https://www.w3schools.com/html/mov_bbb.mp4"  type="video/mp4"/>
+                    </video>
+                    <audio controls>
+                        <source src="https://www.w3schools.com/html/horse.ogg" type="audio/ogg"/>
+                    </audio>	
+                </div>
+                <div class="video">
+                    <iframe src="https://www.youtube.com/embed/xw3C03Ba8Dk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="article-section">
+        <div class="container">
+            <h1 class="article-title">news | <a href="#">all news</a></h1>
+            <div class="article-wrapper">
+                <article class="article">
+                    <div class="img-block" style="background-image: url('https://upload.wikimedia.org/wikipedia/en/thumb/6/63/IMG_%28business%29.svg/1200px-IMG_%28business%29.svg.png')"></div>
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/6/63/IMG_%28business%29.svg/1200px-IMG_%28business%29.svg.png">
+                    <h1 class="article-header">Interface Design</h1>
+                </article>
+                <article class="article">
+                        <div class="img-block" style="background-image: url('img/design.jpg')"></div>
+                        <img src="img/design.jpg">
+                        <h1 class="article-header">Interface Design</h1>
+                    </article>
+                <article class="article">
+                    <div class="img-block" style="background-image: url('http://qnimate.com/wp-content/uploads/2014/03/images2.jpg')"></div>
+                    <img src="http://qnimate.com/wp-content/uploads/2014/03/images2.jpg">
+                    <h1 class="article-header">Interface Design</h1>
+                </article>
+                <article class="article">
+                    <div class="img-block" style="background-image: url('img/design.jpg')"></div>
+                    <img src="img/design.jpg">
+                    <h1 class="article-header">Interface Design</h1>
+                </article>
+            </div>
+        </div>
+    </section>
+    
+   <section class="featured-section">
 	<div class="container">
 		<h1 class="featured-title">Featured | <a href="#">view all featured media</a></h1>
 		<div class="article-wrapper clearfix">
@@ -123,18 +149,19 @@
 				<div class="read-more-wrapper clearfix">
 					<a class="float-right" href="#">read more</a>
 				</div>
-				
 			</article>
 		</div>
 	</div>
 </section>
-
-<footer class="footer">
-	<div class="container clearfix">
-		<div class="left-block float-left">©2017 hyper text murkup language</div>
-		<div class="right-block float-right">created by: ME</div>
-	</div>
+    
+<footer class="footer is-visible">
+    <div class="container footer-wrapper">
+        <div class="left-block">©2017 hyper text murkup language</div>
+        <div class="right-block">created by: ME</div>
+    </div>
 </footer>
-
+<div class="overlay">
+    <h1 style="font-size: 100px;">test</h1>
+</div>
 </body>
-</html>
+</html>   

@@ -1,0 +1,30 @@
+@keyframes colorAnimation {
+	20%{
+		color: red;
+	}
+	50%{
+		color: blue;
+	}
+	100%{
+		color: yellow;
+	}
+}
+
+@keyframes logoAnimation {
+	10%{
+		-webkit-transform: scale(0.5) skew(90deg) rotate(-90deg);
+		        transform: scale(0.5) skew(90deg) rotate(-90deg);
+	}30%{
+		-webkit-transform: scale(1) skew(180deg) rotate(-180deg);
+		        transform: scale(1) skew(180deg) rotate(-180deg);
+	}50%{
+		-webkit-transform: scale(1.5) skew(360deg) rotate(-360deg);
+		        transform: scale(1.5) skew(360deg) rotate(-360deg);
+	}70%{
+		-webkit-transform: scale(1) skew(180deg) rotate(-180deg);
+		        transform: scale(1) skew(180deg) rotate(-180deg);
+	}100%{
+		-webkit-transform: scale(0.5) skew(90deg) rotate(-90deg);
+		        transform: scale(0.5) skew(90deg) rotate(-90deg);
+	}
+}

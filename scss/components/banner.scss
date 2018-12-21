@@ -1,0 +1,25 @@
+/* banner section */
+.banner-section{
+	background-color: $base_gray;
+	padding: 30px 0;
+}
+.banner-img{
+	width: 100%;
+}
+.white-logo{
+	position: absolute;
+	right: 30px;
+	bottom: 30px;
+	width: 100px;
+	/*animation: logoAnimation 5s infinite 1s;*/
+}
+.banner-list{
+	position: absolute;
+	bottom: 30px;
+	left: 30px;
+	font-size: 30px;
+	font-family: $Roboto;
+	text-transform: uppercase;
+	color: $base_white;
+}
+/* banner section */
