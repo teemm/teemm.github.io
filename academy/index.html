@@ -10,49 +10,86 @@
     <title>Document</title>
 </head>
 <body>
-    <header class="header">
-        <a href="index.html" class="display-inline-block vertical-middle">
-            <img class="logo" src="img/logo.svg" alt="logo">
-        </a>
-        <nav class="display-inline-block vertical-middle">
-            <ul>
-                <li class="display-inline-block">
-                    <a href="index.html">მთავარი</a>
-                </li>
-                <li class="display-inline-block">
-                    <a href="news.html">სიახლები</a>
-                </li>
-                <li class="display-inline-block">
-                    <a href="contact.html">კონტაქტი</a>
-                </li>
-            </ul>
-        </nav>
+    <header class="header container">
+        <div class="bg">
+                <a href="#" class="logo-wrapper float-left">
+                        <img src="img/logo.svg" class="logo" alt="logo">
+                    </a>
+                    <ul class="social-ul float-right">
+                        <li class="social-li vertical-middle display-inline-block">
+                            <a href="#" class="social-a">F</a>
+                        </li>
+                        <li class="social-li vertical-middle display-inline-block">
+                            <a href="#" class="social-a">F</a>
+                        </li>
+                        <li class="social-li vertical-middle display-inline-block">
+                            <a href="#" class="social-a">F</a>
+                        </li>
+                        <li class="social-li vertical-middle display-inline-block">
+                            <a href="#" class="social-a">F</a>
+                        </li>
+                    </ul>
+                    <nav class="nav">
+                        <ul class="nav-ul">
+                            <li class="nav-li vertical-middle display-inline-block">
+                                <a href="#" class="nav-a">home</a>
+                            </li>
+                            <li class="nav-li vertical-middle display-inline-block">
+                                <a href="#" class="nav-a">news</a>
+                            </li>
+                            <li class="nav-li vertical-middle display-inline-block">
+                                <a href="#" class="nav-a">about</a>
+                            </li>
+                            <li class="nav-li vertical-middle display-inline-block">
+                                <a href="#" class="nav-a">contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="clear"></div>
+        </div>
+
     </header>
-    <section class="banner container">
-        <img src="img/cover.png" alt="cover">
+    <section class="banner-section">
+        <div class="container">
+            <img src="img/cover.png" alt="cover">
+        </div>
     </section>
-    <section class="article-section container">
-         <h1 class="article-title">Featured | <a href="javascript:void(0)">view all featured media</a></h1>
-         <div class="feature-article-wrapper">
-             <article class="feature-arcile vertical-middle display-inline-block">
-                 <h2 class="feature-article-title">Responsive Web Design</h2>
-                 <img class="display-inline-block vertical-top" src="img/finger.png" alt="finger"><!--
-                 --><p class="display-inline-block vertical-top">approach that suggests that design and development should respond to the user's behavior and environment based on screen size, platform and orientation.</p>
-             </article><!--
-             --><article class="feature-arcile vertical-middle display-inline-block">
-                <h2 class="feature-article-title">Responsive Web Design</h2>
-                <img class="display-inline-block vertical-top" src="img/finger.png" alt="finger"><!--
-                --><p class="display-inline-block vertical-top">approach that suggests that design and development should respond to the user's behavior and environment based on screen size, platform and orientation.</p>
-            </article>
-         </div>
+    <section class="video-secttion">
+        <div class="container">
+            <h1 class="section-title">Videos | <a href="#">view all videos</a></h1>
+            <div class="video-block">
+                <div class="video float-left">
+                    <iframe src="https://www.youtube.com/embed/QVFoI9HNJ34" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="video float-right">
+                    <iframe src="https://www.youtube.com/embed/QVFoI9HNJ34" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
     </section>
-    <footer class="footer container">
-        <a class="footer-social-list fb" href="https://www.facebook.com/" target="_blank">
-            <img class="social-icon" src="img/fb_1.svg" alt="fb">
-        </a>
-        <a class="footer-social-list youtube" href="https://www.youtube.com/" target="_blank">
-            <img class="social-icon" src="img/youtube_1.svg" alt="youtube">
-        </a>
-    </footer>
+    <section class="news-section">
+        <div class="container">
+            <h1 class="section-title">Videos | <a href="#">view all videos</a></h1>
+            <div class="article-wrapper clearfix">
+                <article class="article float-left">
+                    <img src="img/coding.jpg" alt="coding">
+                    <h1 class="article-title">C# coding</h1>
+                </article>
+                <article class="article float-left">
+                    <img src="img/coding.jpg" alt="coding">
+                    <h1 class="article-title">C# coding</h1>
+                </article>
+                <article class="article float-left">
+                    <img src="img/coding.jpg" alt="coding">
+                    <h1 class="article-title">C# coding</h1>
+                </article>
+                <article class="article float-left">
+                    <img src="img/coding.jpg" alt="coding">
+                    <h1 class="article-title">C# coding</h1>
+                </article>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
