@@ -26,12 +26,6 @@
     clear: both;
     display: block;
 }
-.clearfix::before{
-    display: block;
-    width: 200px;
-    height: 200px;
-    background: red;
-}
 body{
     font-family: "RobotoRegular";
 }
@@ -55,6 +49,19 @@ body{
 }
 .nav-a:hover{
     opacity: 0.5;
+}
+.social-li a{
+    padding: 0 15px;
+    border-right-color: #363E97;
+    border-right-width: 1px;
+    border-right-style: solid;
+}
+.social-li img{
+    height: 30px;
+}
+.social-li:last-child a{
+    border: 0;
+    padding-right: 0;
 }
 /* end header */
 /* banner section */
@@ -125,3 +132,100 @@ audio, video{
     margin-left: 0;
 }
 /* end news section */
+
+/*  news details section  */
+.news-details-section{
+    line-height: 90px;
+    background-color: #BDCCD4;
+}
+.news-details-section .cat-detial{
+    font-size: 24px;
+    color: #363E97;
+    text-transform: uppercase
+}
+.news-details-section .cat-detial span{
+    margin-left: 5px;
+}
+.news-details-section .cat-detial::after{
+    content: "";
+    width: 23px;
+    height: 13px;
+    background-image: url('../img/arrow-right.svg');
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+.news-details-section .cat-detial:last-child{
+    color: #ffffff;
+}
+.news-details-section .cat-detial:last-child::after{
+    display: none;
+}
+.news-details-section .see-next{
+    font-size: 22px;
+    text-decoration: underline;
+    color: #ffffff;
+}
+/*  end news details section  */
+/* detail article */
+.detail-article-wrapper{
+    padding: 30px 0;
+}
+
+.detail-article-wrapper .date-block{
+    /* width: 60px;
+    height: 60px; */
+    padding: 5px;
+    text-align: center;
+    border: 3px solid #BDCCD4;
+    color: #363E97;
+}
+.detail-article-wrapper .date-block .number{
+    font-size: 34px;
+}
+
+.detail-article-wrapper .date-block .month{
+    font-size: 12px;
+}
+.detail-article-wrapper  .detail-article-title{
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #363E97;
+    margin: 30px auto;
+}
+.detail-article-wrapper  .text-box img{
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.detail-article-wrapper  .text-box p{
+    margin-bottom: 30px;
+    text-indent: 20px;
+    font-size: 20px;
+    color: #58595B;
+}
+/* detail article */
+
+/*  about  */
+.news-details-section.about{
+    background-color: #EE4036;
+}
+/* ens about */
+
+/*  uknow section  */
+.uknow-section .img-block{
+    width: 300px;
+    height: 300px;
+    border: 1px solid #EE4036;
+    background-color: aqua;
+    background-image: url('../img/space-x.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 70%;
+}
+.uknow-section .img-block:hover{
+    /* width: 500px;
+    height: 500px; */
+    transform: scale(1.5);
+}
+/* ens uknow section */
