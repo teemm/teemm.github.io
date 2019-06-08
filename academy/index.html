@@ -7,12 +7,14 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    <header class="header container">
-        <a href="#" class="logo-wrapper float-left">
-                <img src="img/logo.svg" class="logo" alt="logo">
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo-wrapper float-left">
+                    <img src="img/logo.svg" class="logo" alt="logo">
             </a>
             <ul class="social-ul float-right">
                 <li class="social-li vertical-middle display-inline-block">
@@ -52,10 +54,20 @@
                     </li>
                 </ul>
             </nav>
+        </div>       
     </header>
-    <section class="banner-section">
-        <div class="container">
-            <img src="img/cover.png" alt="cover">
+    <section class="banner-section relative">
+        <div class="container relative">
+            <img class="banner-img" src="img/cover.png" alt="cover">
+            <div class="rigth-text-block">
+                <ul>
+                    <li>things aren't always</li>
+                    <li>#000000</li>
+                    <li>or</li>
+                    <li>#ffffff</li>
+                </ul>
+            </div>
+            <img src="img/white-logo.svg" alt="white-logo" class="white-logo">
         </div>
     </section>
     <section class="video-secttion">
