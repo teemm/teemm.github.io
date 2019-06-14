@@ -371,6 +371,11 @@ audio, video{
     left: 0;
 }
 /* overlay */
+@media (max-width: 1170px){
+    .article{
+        flex: 0 0 24.5%;
+    }
+}
 
 @media (max-width: 1024px){
    .nav{
@@ -380,7 +385,7 @@ audio, video{
        display: flex;
    }
    .article{
-       width: 32%;
+       flex: 0 0 32%;
    }
    .article img{
        width: 100%;
@@ -401,7 +406,7 @@ audio, video{
 
 @media (max-width: 760px){
     .article{
-        width: 48%;
+        flex: 0 0 48%;
     }
     .article:nth-child(3){
         margin-top: 30px;
@@ -413,9 +418,10 @@ audio, video{
         display: none
     }
     .article{
-        width: 100%;
+        flex: 0 0 100%;
     }
     .article:nth-child(2){
         margin-top: 30px;
     }
  }
+
