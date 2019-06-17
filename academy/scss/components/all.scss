@@ -1,129 +1,4 @@
-/* base classes */
-.display-inline-block{
-    display: inline-block;
-}
-.vertical-middle{
-    vertical-align: middle
-}
-.vertical-top{
-    vertical-align: top
-}
-.d-flex{
-    display: flex;
-}
-.container{
-    max-width: 1170px;
-    margin: 0 auto;
-    min-width: 320px;
-}
-.float-left{
-    float: left;
-}
-.float-right{
-    float: right;
-}
-.clear{
-    clear: both;
-}
-.clearfix::after{
-    content: " ";
-    clear: both;
-    display: block;
-}
-.relative{
-    position: relative;
-}
-body{
-    font-family: "RobotoRegular";
-    padding-top: 100px;
-}
-/* base classes */
 
-/*  header  */
-.logo{
-    width: 100px;
-}
-.burger-icon{
-    width: 40px;
-    height: 40px;
-    border: 3px solid #363E97;
-    margin-left: 15px;
-    display: none;
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-}
-.burger-icon .arrow{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(0);
-    width: 30px;
-    height: 3px;
-    background-color: #363E97;
-    transition: all .3s linear;
-}
-.burger-icon .arrow:nth-child(1){
-    top: 30%;
-}
-.burger-icon .arrow:nth-child(3){
-    top: 70%;
-}
-.burger-icon.active .arrow:nth-child(2){
-    left: -150%;
-}
-.burger-icon.active .arrow:nth-child(1){
-    top: 50%;
-    transform: translate(-50%, -50%) rotate(45deg);
-}
-.burger-icon.active .arrow:nth-child(3){
-    top: 50%;
-    transform: translate(-50%, -50%) rotate(-45deg);
-}
-.header .right-block{
-    align-items: center;
-}
-.header{
-    padding: 30px 0;
-    width: 100%;
-    position: fixed;
-    background: #fff;
-    top: 0;
-    left: 0;
-    z-index: 20;
-}
-.nav-ul{
-    text-align: center
-}
-.nav-a{
-    text-transform: uppercase;
-    font-size: 24px;
-    padding: 0 15px;
-    color: #3D58A6;
-    /* color: red; */
-}
-.header-wrapper{
-    justify-content: space-between;
-    align-items: center;
-}
-.nav-a:hover{
-    /* color: blue; */
-    opacity: 0.5;  
-}
-.social-li a{
-    padding: 0 15px;
-    border-right-color: #363E97;
-    border-right-width: 1px;
-    border-right-style: solid;
-}
-.social-li img{
-    height: 30px;
-}
-.social-li:last-child a{
-    border: 0;
-    padding-right: 0;
-}
-/* end header */
 /* banner section */
 .banner-section{
     background-color: #E6E6E6;
@@ -148,7 +23,7 @@ body{
 /* end banner section */
 /* video section */
 .video-secttion{
-    background-color: #363E97;
+    background-color: $default_blue;
     padding-bottom: 90px;
     /* position: sticky; */
     /* top: 94px; */
@@ -324,23 +199,7 @@ audio, video{
     animation: 4s anim infinite;
 }
 
-@keyframes anim{
-    0%{
-       transform: rotate(0) 
-    }
-    25%{
-        transform: rotate(180deg)  
-    }
-    50%{
-        transform: rotate(360deg)  
-    }
-    75%{
-        transform: rotate(180deg) 
-    }
-    100%{
-        transform: rotate(0)  
-    }
-}
+
 /* ens uknow section */
 
 /* .test{
@@ -364,64 +223,12 @@ audio, video{
     left: -100%;
     z-index: 15;
     padding-top: 100px;
-    transition: left .3s linear;
+    transition: left $animation_time linear;
 }
 
 .overlay.active{
     left: 0;
 }
 /* overlay */
-@media (max-width: 1170px){
-    .article{
-        flex: 0 0 24.5%;
-    }
-}
 
-@media (max-width: 1024px){
-   .nav{
-       display: none;
-   }
-   .burger-icon{
-       display: flex;
-   }
-   .article{
-       flex: 0 0 32%;
-   }
-   .article img{
-       width: 100%;
-   }
-   .article:nth-child(4){
-       margin-top: 30px;
-   }
-   .video-secttion{
-       display: none;
-   }
-}
-
-@media (max-width: 1170px){
-    .container{
-        padding: 0 15px;
-    }
-}
-
-@media (max-width: 760px){
-    .article{
-        flex: 0 0 48%;
-    }
-    .article:nth-child(3){
-        margin-top: 30px;
-    }
-}
-
-@media (max-width: 480px){
-    .social-li:not(.search){
-        display: none
-    }
-    .article{
-        flex: 0 0 100%;
-    }
-    .article:nth-child(2){
-        margin-top: 30px;
-    }
- }
 

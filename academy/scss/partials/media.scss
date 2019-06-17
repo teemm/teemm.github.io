@@ -1,0 +1,58 @@
+@media (max-width: 1170px){
+    .article{
+        flex: 0 0 24.5%;
+    }
+}
+
+@media (max-width: 1024px){
+    .header{
+        .nav{
+            display: none;
+        }
+        .burger-icon{
+            display: flex;
+        }
+    }
+
+   .article{
+       flex: 0 0 32%;
+   }
+   .article img{
+       width: 100%;
+   }
+   .article:nth-child(4){
+       margin-top: 30px;
+   }
+   .video-secttion{
+       display: none;
+   }
+}
+
+@media (max-width: 1170px){
+    .container{
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 760px){
+    .article{
+        flex: 0 0 48%;
+    }
+    .article:nth-child(3){
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 480px){
+    .header{
+        .social-li:not(.search){
+            display: none
+        }
+    }
+    .article{
+        flex: 0 0 100%;
+    }
+    .article:nth-child(2){
+        margin-top: 30px;
+    }
+ }

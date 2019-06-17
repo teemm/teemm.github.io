@@ -1,0 +1,40 @@
+/* base classes */
+.display-inline-block{
+    display: inline-block;
+}
+.vertical-middle{
+    vertical-align: middle
+}
+.vertical-top{
+    vertical-align: top
+}
+.d-flex{
+    display: flex;
+}
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+    min-width: 320px;
+}
+.float-left{
+    float: left;
+}
+.float-right{
+    float: right;
+}
+.clear{
+    clear: both;
+}
+.clearfix::after{
+    content: " ";
+    clear: both;
+    display: block;
+}
+.relative{
+    position: relative;
+}
+body{
+    font-family: $roboto;
+    padding-top: 100px;
+}
+/* base classes */

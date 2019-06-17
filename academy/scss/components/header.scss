@@ -1,0 +1,95 @@
+
+.header{
+    // @extend %d-f
+    padding: 30px 0;
+    width: 100%;
+    position: fixed;
+    background: $default_white;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    .logo{
+        width: 100px;
+    }
+    .burger-icon{
+        width: 40px;
+        height: 40px;
+        border: 3px solid $default_blue;
+        margin-left: 15px;
+        display: none;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        .arrow{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(0);
+            width: 30px;
+            height: 3px;
+            background-color: $default_blue;
+            transition: all .3s linear;
+            &:nth-child(1){
+                top: 30%;
+            }
+            &:nth-child(3){
+                top: 70%;
+            }
+        }
+        &.active{
+            .arrow{
+                :nth-child(1){
+                    top: 50%;
+                    transform: translate(-50%, -50%) rotate(45deg);
+                }
+                :nth-child(2){
+                    left: -150%;
+                }
+                :nth-child(3){
+                    top: 50%;
+                    transform: translate(-50%, -50%) rotate(-45deg);
+                }
+            }
+        }
+    }
+    .header .right-block{
+        align-items: center;
+    }
+    .nav-ul{
+        text-align: center
+    }
+    .nav-a{
+        text-transform: uppercase;
+        font-size: 24px;
+        padding: 0 15px;
+        color: $default_blue;
+        /* color: red; */
+    }
+    .header-wrapper{
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav-a:hover{
+        /* color: blue; */
+        opacity: 0.5;  
+    }
+    .social-li a{
+        padding: 0 15px;
+        border-right-color: $default_blue;
+        border-right-width: 1px;
+        border-right-style: solid;
+    }
+    .social-li .fb:hover i::before{
+        color: gray;
+    }
+    .social-li a i{
+        font-size: 30px;
+    }
+    .social-li img{
+        height: 30px;
+    }
+    .social-li:last-child a{
+        border: 0;
+        padding-right: 0;
+    }
+}
