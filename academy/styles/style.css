@@ -391,6 +391,12 @@ audio, video {
 /* overlay */
 .overlay {
   position: fixed;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   width: 100%;
   height: 100%;
   background-color: rgba(238, 64, 54, 0.8);
@@ -413,7 +419,10 @@ audio, video {
   background: #fff;
   top: 0;
   left: 0;
-  z-index: 20; }
+  z-index: 20;
+  -webkit-transition: top .5s linear;
+  -o-transition: top .5s linear;
+  transition: top .5s linear; }
   .header .logo {
     width: 100px; }
   .header .burger-icon {
@@ -442,14 +451,14 @@ audio, video {
         top: 30%; }
       .header .burger-icon .arrow:nth-child(3) {
         top: 70%; }
-    .header .burger-icon.active .arrow :nth-child(1) {
+    .header .burger-icon.active .arrow:nth-child(1) {
       top: 50%;
       -webkit-transform: translate(-50%, -50%) rotate(45deg);
       -ms-transform: translate(-50%, -50%) rotate(45deg);
       transform: translate(-50%, -50%) rotate(45deg); }
-    .header .burger-icon.active .arrow :nth-child(2) {
+    .header .burger-icon.active .arrow:nth-child(2) {
       left: -150%; }
-    .header .burger-icon.active .arrow :nth-child(3) {
+    .header .burger-icon.active .arrow:nth-child(3) {
       top: 50%;
       -webkit-transform: translate(-50%, -50%) rotate(-45deg);
       -ms-transform: translate(-50%, -50%) rotate(-45deg);
@@ -462,17 +471,15 @@ audio, video {
     text-align: center; }
   .header .nav-a {
     text-transform: uppercase;
-    font-size: 24px;
-    padding: 0 15px;
-    color: #363E97;
+    font-size: 1.5em;
+    padding: 0 0.625em;
     /* color: red; */ }
   .header .header-wrapper {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center; }
+    -ms-flex-line-pack: center;
+    align-content: center; }
   .header .nav-a:hover {
     /* color: blue; */
     opacity: 0.5; }
@@ -490,6 +497,25 @@ audio, video {
   .header .social-li:last-child a {
     border: 0;
     padding-right: 0; }
+  .header.active {
+    top: -100%; }
+
+.auth-form {
+  max-width: 500px;
+  width: 100%;
+  margin: auto; }
+  .auth-form input, .auth-form button {
+    width: 100%;
+    height: 50px;
+    font-size: 24px;
+    margin: 10px auto; }
+  .auth-form input.error {
+    border: 4px solid blue; }
+  .auth-form .disable {
+    cursor: not-allowed;
+    outline: none;
+    border: 0;
+    opacity: .7; }
 
 @media (max-width: 1170px) {
   .article {

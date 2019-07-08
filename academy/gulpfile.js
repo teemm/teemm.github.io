@@ -18,3 +18,13 @@ gulp.task('sass', function () {
 gulp.task('watch', function () {
   gulp.watch('scss/**/*.scss', gulp.parallel('sass'));
 });
+
+gulp.task('default', function () {
+  return gulp.src('scss/style.scss')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(autoprefixer({
+      browsers: ['last 3 versions'],
+      cascade: false
+    }))
+    .pipe(gulp.dest('styles'));
+});

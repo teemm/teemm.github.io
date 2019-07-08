@@ -23,7 +23,7 @@
     <title>Document</title>
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="header">
         <div class="container d-flex header-wrapper">
             <a href="#" class="logo-wrapper">
                     <img src="img/logo.svg" class="logo" alt="logo">
@@ -71,7 +71,7 @@
                         </a>
                     </li>
                 </ul>
-                <div class="burger-icon">
+                <div class="burger-icon" id="burger">
                     <span class="arrow"></span>
                     <span class="arrow"></span>
                     <span class="arrow"></span>
@@ -146,8 +146,17 @@
             </div>
         </div>
     </section>
-    <div class="overlay">
+    <div class="overlay" id="overlay">
        <h1>asdasdsa</h1>
     </div>
+    <div class="overlay active" id="auth">
+        <form id="form" class="auth-form">
+            <input type="text" name="nickname" placeholder="Username" id="username">
+            <input type="password" name="password" placeholder="Password" id="password">
+            <button class="disable" type="submit" id="auth-button">ავტორიზაცია</button>
+        </form>
+    </div>
+    <button id="button" style="margin: 100px auto">  button</button> 
+    <script src="js/script.js"></script>
 </body>
 </html>

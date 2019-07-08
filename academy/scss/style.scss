@@ -1,8 +1,11 @@
 @import "partials/variable.scss";
+@import "partials/mixins.scss";
+@import "partials/functions.scss";
 @import "base/reset.scss";
 @import "partials/fonts.scss";
 @import "partials/keyframes.scss";
 @import "base/base.scss";
 @import "components/all.scss";
 @import "components/header.scss";
+@import "components/form.scss";
 @import "partials/media.scss";

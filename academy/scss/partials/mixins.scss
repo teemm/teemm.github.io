@@ -1,0 +1,17 @@
+@mixin test($justify:center, $align:center){
+    justify-content: $justify;
+    align-content: $align;
+}
+@mixin border ($size, $type, $color) {
+    @if $color = black {
+        $type:dashed;
+    } @else if $color = yellow {
+        $type:dotted;
+    } @else {
+        $type:solid;
+    }
+    border: $size $type $color;
+    -webkit-border: $size $type $color;
+    -moz-border: $size $type $color;
+    -o-border: $size $type $color;
+}

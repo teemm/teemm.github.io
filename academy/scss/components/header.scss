@@ -8,6 +8,7 @@
     top: 0;
     left: 0;
     z-index: 20;
+    transition:top .5s linear;
     .logo{
         width: 100px;
     }
@@ -38,14 +39,14 @@
         }
         &.active{
             .arrow{
-                :nth-child(1){
+                &:nth-child(1){
                     top: 50%;
                     transform: translate(-50%, -50%) rotate(45deg);
                 }
-                :nth-child(2){
+                &:nth-child(2){
                     left: -150%;
                 }
-                :nth-child(3){
+                &:nth-child(3){
                     top: 50%;
                     transform: translate(-50%, -50%) rotate(-45deg);
                 }
@@ -60,14 +61,19 @@
     }
     .nav-a{
         text-transform: uppercase;
-        font-size: 24px;
-        padding: 0 15px;
-        color: $default_blue;
+        font-size: em(24);
+        padding: 0 em(15, 24);
+        // color: $default_blue;
+        // @debug "color of px: #{$default_blue}";
+        // @include border(5px, solid, yellow);
         /* color: red; */
     }
+
     .header-wrapper{
-        justify-content: space-between;
-        align-items: center;
+        // justify-content: space-between;
+        // align-items: center;
+        @include test(space-between, center);
+        // @include test();
     }
     .nav-a:hover{
         /* color: blue; */
@@ -91,5 +97,8 @@
     .social-li:last-child a{
         border: 0;
         padding-right: 0;
+    }
+    &.active{
+        top: -100%;
     }
 }
