@@ -203,6 +203,17 @@
     display: block;
     width: 100%;
 }
+.newses-section .arcile-img-div{
+    height: 210px;
+    width: 100%;
+    height: 210px;
+    width: 100%;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #E3E3E3;
+}
 /* newses section */
 .iframe{
    width: 870px;
