@@ -1,117 +1,4 @@
-/* base classes */
-.inline-block{
-    display: inline-block;
-}
-.verical-middle{
-    vertical-align: middle
-}
-.vertical-top{
-    vertical-align: top;
-}
-.vertical-bottom{
-    vertical-align: bottom;
-}
-.container{
-    max-width: 1170px;
-    width: 100%;
-    margin: 0 auto;
-}
-.float-left{
-    float: left
-}
-.float-right{
-    float: right;
-}
-.clear{
-    clear: both;
-}
-.clearfix::after{
-    content: " ";
-    display: block;
-    clear: both;
-}
-.title-heading{
-    font-family: 'Roboto';
-    font-size: 24px;
-    text-transform: uppercase;
-    line-height: 90px;
-}
-.title-heading .link{
-    text-transform: lowercase;
-}
-.relative{
-    position: relative;
-}
-/* base classes */
-/* header */
-.logo{
-    width: 100px;
-}
-.main{
-    padding-top: 95px;
-}
-.header{
-    padding: 30px 0;
-    background-color: #ffffff;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 20;
-    /* left: 0; */
-    /* background-color: red; */
-}
-.header-wrapper{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.navigation-a{
-    padding: 0 15px; 
-    display: inline-block;
-    /* color: rgb(61,88,166); */
-    color: #3D58A6;
-    font-size: 22px;
-    font-family: 'Roboto_regular';
-    text-transform: uppercase;
-    opacity: 1;
-    /* transition-property: opacity;
-    transition-timing-function: linear;
-    transition-duration: 1s;
-    transition-delay: 1s; */
-    transition: opacity .3s linear 1s;
-}
-.navigation-a:hover{
-    /* color: #EE4036; */
-    opacity: 0.5;
-}
-.social-li .img{
-    height: 30px;
-}
 
-.social-icons-header{
-    font-size: 30px;
-}
-.social-icons-header::before{
-    transition: color .3s linear;
-}
-.social-icons-header:hover::before{
-    color: aquamarine;
-}
-.social-icons-header.icon-youtube:hover::before{
-    color: red;
-}
- 
-.social-a{
-    padding: 0 15px;
-    border-right-color: #3D58A6;
-    border-right-style: solid;
-    border-right-width: 3px;
-}
-.social-li:last-child .social-a{
-    padding-right: 0;
-    border: 0;
-}
-/* header */
 .soclia-a img {
     height: 30px;
 }
@@ -279,28 +166,6 @@
 } */
 /* fatured block */
 /* banner container */
-@keyframes test {
-    0%{
-        background-color: #E6E6E6;
-        transform: rotate(0)
-    }
-    30%{
-        background-color: yellow;
-        transform: rotate(180deg)
-    }
-    60%{
-        background-color: red;
-        transform: rotate(360deg)
-    }
-    90%{
-        background-color: aquamarine;
-        transform: rotate(180deg)
-    }
-    100%{
-        background-color: green;
-        transform: rotate(0)
-    }
-}
 .banner-container{
     background-color: #E6E6E6;
     padding: 30px 0;
@@ -546,4 +411,5 @@
     visibility: visible;
     left: 0;
 }
+
 /* overley */

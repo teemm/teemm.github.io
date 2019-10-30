@@ -1,0 +1,22 @@
+@keyframes test {
+    0%{
+        background-color: #E6E6E6;
+        transform: rotate(0)
+    }
+    30%{
+        background-color: yellow;
+        transform: rotate(180deg)
+    }
+    60%{
+        background-color: red;
+        transform: rotate(360deg)
+    }
+    90%{
+        background-color: aquamarine;
+        transform: rotate(180deg)
+    }
+    100%{
+        background-color: green;
+        transform: rotate(0)
+    }
+}

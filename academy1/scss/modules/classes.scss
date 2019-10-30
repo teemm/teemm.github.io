@@ -1,0 +1,45 @@
+/* base classes */
+.inline-block{
+    display: inline-block;
+}
+.verical-middle{
+    vertical-align: middle
+}
+.vertical-top{
+    vertical-align: top;
+}
+.vertical-bottom{
+    vertical-align: bottom;
+}
+.container{
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+}
+.float-left{
+    float: left
+}
+.float-right{
+    float: right;
+}
+.clear{
+    clear: both;
+}
+.clearfix::after{
+    content: " ";
+    display: block;
+    clear: both;
+}
+.title-heading{
+    font-family: 'Roboto';
+    font-size: 24px;
+    text-transform: uppercase;
+    line-height: 90px;
+}
+.title-heading .link{
+    text-transform: lowercase;
+}
+.relative{
+    position: relative;
+}
+/* base classes */
