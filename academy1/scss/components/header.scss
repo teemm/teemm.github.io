@@ -27,14 +27,14 @@
     /* color: rgb(61,88,166); */
     color: $defaultBlueColor;
     font-size: 22px;
-    font-family: 'Roboto_regular';
+    font-family: $robotoRegular;
     text-transform: uppercase;
     opacity: 1;
     /* transition-property: opacity;
     transition-timing-function: linear;
     transition-duration: 1s;
     transition-delay: 1s; */
-    transition: opacity .3s linear 1s;
+    transition: opacity $animationTime $animationType $animationDiley;
 }
 .navigation-a:hover{
     /* color: #EE4036; */
@@ -72,3 +72,8 @@
     }
 }
 /* header */
+
+.test-banner{
+    @extend .test25;
+    // @include translate(50px, 50px, 0);
+}

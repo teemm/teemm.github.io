@@ -1,0 +1,27 @@
+@mixin translate ($x, $y, $z) {
+    transform: translate3D($x, $y, $z);
+    -webkit-transform: translate3D($x, $y, $z);
+    -o-transform: translate3D($x, $y, $z);
+    -moz-transform: translate3D($x, $y, $z);
+    -ms-transform: translate3D($x, $y, $z);
+}
+
+@mixin flext ($jusitfy:center, $align:center, $display:flex) {
+    display: $display;
+    justify-content: $jusitfy;
+    align-items: $align;
+}
+
+@mixin border ($size, $type) {
+    // @debug ($size, $type);
+   $color: inherit;
+   
+    @if $size >= 10 {
+        $color: red;
+    }
+    @else{
+        $color: black;
+    }
+    
+    border: $size $type $color; 
+}
